@@ -1,87 +1,1028 @@
 <!DOCTYPE html>
-<html lang="tr-TR">
+<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yetkin Karasungur Personal web site</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8" />
+    <title>Kards</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-      }
 
-      .bgimg {
-        background-image: url("assets/img/mainpage.jpg");
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        color: white;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 25px;
-      }
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
 
-      .topleft {
-        position: absolute;
-        top: 0;
-        left: 16px;
-      }
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-      .bottomleft {
-        position: absolute;
-        bottom: 0;
-        left: 16px;
-      }
-
-      .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-
-      hr {
-        margin: auto;
-        width: 40%;
-      }
-      i {
-        font-size: 150px;
-      }
-      a {
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        transition: all 0.5s ease;
-      }
-
-      a:hover {
-        transform: rotate(180deg);
-      }
-    </style>
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
-  <body>
-    <div class="bgimg">
-      <div class="topleft">
-        <p>Logo</p>
-      </div>
-      <div class="middle">
-        <h1>Çok Yakında</h1>
-        <hr />
-        <p>Bir Kaç güne aktif olucak.</p>
 
-        <a href="https://github.com/yetkinkrsngr">
-          <i class="ri-github-fill"></i
-        ></a>
+  <body id="top">
+    <!-- header 
+   ================================================== -->
+    <header>
+      <div class="row">
+        <div class="top-bar">
+          <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+          <div class="logo">
+            <a href="index.html">Yetkin</a>
+          </div>
+
+          <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+              <li class="current">
+                <a class="smoothscroll" href="#intro" title="">Anasayfa</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#about" title="">Hakkımda</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#resume" title="">Özgeçmiş</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#services" title="">Hizmetler</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#contact" title="">İletşim</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /top-bar -->
       </div>
-      <div class="bottomleft">
-        <p>Şimdilik BYE</p>
+      <!-- /row -->
+    </header>
+    <!-- /header -->
+
+    <!-- intro section
+   ================================================== -->
+    <section id="intro">
+      <div class="intro-overlay"></div>
+
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-twelve">
+            <h5>Merhaba, Dünya.</h5>
+            <h1>Ben Yetkin Karasungur.</h1>
+
+            <p class="intro-position">
+              <span>Front-end Developer</span>
+              <span>UI/UX Designer</span>
+            </p>
+
+            <a class="button stroke smoothscroll" href="#about" title=""
+              >Hakkımda daha Bilgi</a
+            >
+          </div>
+        </div>
       </div>
+      <!-- /intro-content -->
+
+      <ul class="intro-social">
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100088846407129"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/yetkinynlmz"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/yetkinkrsngr"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yetkin-karasungur/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- /intro-social -->
+    </section>
+    <!-- /intro -->
+
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Hakkımda</h5>
+          <h1>Kendimi size tanıtmaktan şeref duyarım</h1>
+
+          <div class="intro-info">
+            <img src="images/IMG_0807.jpeg" alt="Profile Picture" />
+
+            <p class="lead">
+              İletişim becerileri yüksek, dijital sistemler ve teknolojiler
+              konusunda deneyimli, sonuç odaklı bir teknoloji uzmanıyım
+              Öğrenmeye ve kendimi geliştirmeye açık bir yapıya sahibim. Sahip
+              olduğum görev ve sorumlulukları her zaman yerine getiririm.
+              Çalışma saatleri konusunda endişelenmeyin ve ihtiyaç halinde her
+              zaman hazır bulundurur. Teknolojik bilgi birikimim ile her türlü
+              yardıma hazırım. Organizasyon / Yönetim Becerileri Grup
+              çalışmasına ve yöneticilik becerilerine yatkın ve yetenekliyim. iş
+              ve zaman planlamasında pratik düşünme ve hızlı hareket etme
+              yeteneği, grup çalışması ve organizasyon yönetimi. Bunu hem yurt
+              içinde hem de yurt içinde dahil olduğum organizasyonlarda
+              yeteneğimin bir kanıtı olarak görüyorum. yurt dışı. Tamamladığım
+              eğitim sayesinde farklı dünya geçmişlerine sahip insanlara uyum
+              sağlayabileceğim. yurt dışı,
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profil</h3>
+          <p>
+            Merhaba! Ben bir Junior Frontend Developer'ım, web geliştirmeye
+            meraklıyım ve kullanıcı dostu arayüzler oluşturmayı seviyorum. HTML,
+            CSS, JavaScript ve React gibi teknolojilere odaklanıyorum ve sürekli
+            gelişmeye açığım. Takım çalışmasına önem veren sorumluluk sahibi
+            biriyim. Hedefim, web dünyasındaki fırsatlardan yararlanmak ve
+            başarılı projelerde yer almak.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Ad Soyad:</strong>
+              <span>Yetkin Karasungr</span>
+            </li>
+            <li>
+              <strong>Doğum Yılı:</strong>
+              <span>29/04/1992</span>
+            </li>
+            <li>
+              <strong>Meslek:</strong>
+              <span>Freelancer, Frontend Developer</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>yetkinkrsngr@gmail.com</span>
+            </li>
+          </ul>
+          <!-- /info-list -->
+        </div>
+
+        <div class="col-six tab-full">
+          <h3>Yetenekler</h3>
+          <p>
+			<ul>
+				<li>HTML, CSS ve JavaScript konusunda yetenekliyim.</li>
+				<li>React gibi Frontend framework'unu kullanabiliyorum.</li>
+				<li>Kullanıcı dostu arayüzler oluşturma becerisine sahibim.</li>
+				<li>Mobil uyumlu ve hızlı web siteleri tasarlayabiliyorum.</li>
+				<li>Git gibi sürüm kontrol sistemlerini kullanıyorum.</li>
+				<li>Problem çözme ve iletişim becerilerim güçlüdür.</li>
+			</ul>			
+          </p>
+
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent90"><span>90%</span></div>
+              <strong>HTML5</strong>
+            </li>
+            <li>
+              <div class="progress percent85"><span>85%</span></div>
+              <strong>CSS3</strong>
+            </li>
+            <li>
+              <div class="progress percent70"><span>70%</span></div>
+              <strong>JQuery</strong>
+            </li>
+            <li>
+              <div class="progress percent70"><span>70%</span></div>
+              <strong>Python</strong>
+            </li>
+            <li>
+              <div class="progress percent75"><span>75%</span></div>
+              <strong>Wordpress</strong>
+            </li>
+          </ul>
+          <!-- /skill-bars -->
+        </div>
+      </div>
+
+      <div class="row button-section">
+        <div class="col-twelve">
+          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
+            >Beni işe al</a
+          >
+          <a href="engresume.rar" title="Download CV" class="button button-primary" download
+            >Özgeçmiş İndir</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /process-->
+
+    <!-- resume Section
+   ================================================== -->
+    <section id="resume" class="grey-section">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Öz geçmiş</h5>
+          <h1>Hakkımda daha fazlası.</h1>
+
+          <p class="lead">
+			"Kod, hayal gücünü gerçeğe dönüştürmenin sihirli anahtarıdır."
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro-->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>İş deneyimi</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Sosyal medya yönetiisi</h3>
+                <p>July 2020- devam ediyor</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Telus İnternational</h4>
+                <p>
+					sosyal medya yönetimi, içerik üretimi, tasarım, reklam yönetimi, raporlama hakkınnda bilgi sahibi olduğum bir firma ,
+					 platformlarda yayınlanacak içerikleri uygunluk, kalite ve güvenlik açısından denetleyen kişiydim. Hedef, kullanıcı deneyimini geliştirmek ve uygun olmayan içerikleri engelledim.
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Ön Uç geliştirici</h3>
+                <p>2014 - 2015</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Patika Dev</h4>
+                <p>
+					Patika Dev, çevrimiçi eğitimler sunan ve pratik becerileri geliştirmeye odaklanan bir platformdur. Teknoloji ve programlama konularında geniş bir müfredat ve topluluk desteği sunar. bu platforma öğrenci olarak başladığım yolculuk mentörlük kapsamında girdi ve halen devam etmekteyim.
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+
+
+
+            </div>
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>Eğitim</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+
+
+
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Bachelor Degree</h3>
+                <p> 2010 -  2016</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>kharkiv Radio Electronik Üniversitesi</h4>
+                <p>
+					bilgisayar mühendisliği bölümü mezunu oluğum üniversite hem bilgisayar bilimler hakkında hemde rusça ve ingilizce dil bilgisi hakkında bilgi sahibi olduğum bir üniversitedir.
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+
+
+            </div>
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+    </section>
+    <!-- /features -->
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>portfoylo</h5>
+          <h1>Bazı yaptığım işler</h1>
+
+          <p class="lead">
+			Merhaba, ben Junior Web Developer Yetkin. Web geliştirmeye olan merakım ve tutkumla, kullanıcılar için etkileyici ve işlevsel web deneyimleri oluşturmaya adanmış biriyim.
+			<br>
+			Yeteneklerim:
+			<br>
+			HTML, CSS ve JavaScript ile temel web sayfaları oluşturabiliyorum.
+			React ve Bootstrap gibi Frontend framework'leriyle çalışabiliyorum.
+			Responsive (duyarlı) tasarım prensiplerini kullanarak mobil uyumlu web siteleri tasarlayabiliyorum.
+			Git ve GitHub ile sürüm kontrolünü ve işbirliğini sağlayabiliyorum.
+			Projelerim:
+			<br>
+			HTML, CSS ve JavaScript kullanarak, basit ve şık bir kişisel blog sayfası tasarladım.
+			Sayfanın tasarımında Bootstrap'ten faydalandım ve blog yazılarını Firebase üzerinde yönetmeyi sağladım.
+			Hava Durumu Uygulaması:
+			<br>
+			Hava durumu API'sini kullanarak, kullanıcının konumuna göre hava durumunu gösteren bir web uygulaması geliştirdim.
+			CSS ile kullanıcı dostu arayüz tasarladım ve JavaScript ile verileri güncelleyerek canlı bir deneyim sağladım.
+			Öğrenmeye ve kendimi geliştirmeye açık bir yapıya sahibim. Takım çalışmasına uyumlu, hatalardan öğrenen ve sorumluluk sahibi bir geliştirici olarak sürekli büyümek ve yeni projelerde yer almak için heyecanlıyım.
+			
+			
+        </div>
+      </div>
+      <!-- /section-intro-->
+
+      <div class="row portfolio-content">
+        <div class="col-twelve">
+          <!-- portfolio-wrapper -->
+          <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/liberty.jpg" alt="Liberty" />
+                <a href="#modal-01" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Liberty</h3>
+                      <span class="folio-types"> Graphic Design </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug" />
+                <a href="#modal-02" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Shutterbug</h3>
+                      <span class="folio-types"> Web Design </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/clouds.jpg" alt="Clouds" />
+                <a href="#modal-03" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Clouds</h3>
+                      <span class="folio-types"> Web Design </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/beetle.jpg" alt="Beetle" />
+                <a href="#modal-04" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Beetle</h3>
+                      <span class="folio-types"> Branding </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse" />
+                <a href="#modal-05" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Lighthouse</h3>
+                      <span class="folio-types"> Web Development </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/salad.jpg" alt="Salad" />
+                <a href="#modal-06" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Salad</h3>
+                      <span class="folio-types"> Branding </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <!-- modal popups - begin
+	            ============================================================= -->
+            <div id="modal-01" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Liberty</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Development</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-01 -->
+
+            <div id="modal-02" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Shutterbug</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Design</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-02 -->
+
+            <div id="modal-03" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Clouds</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Design</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-03 -->
+
+            <div id="modal-04" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Beetle</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Branding</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-04 -->
+
+            <div id="modal-05" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Lighthouse</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Development</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-05 -->
+
+            <div id="modal-06" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Salad</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Branding</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-06 -->
+
+            <!-- modal popups - end
+	            ============================================================= -->
+          </div>
+          <!-- /portfolio-wrapper -->
+        </div>
+        <!-- /twelve -->
+      </div>
+      <!-- /portfolio-content -->
+    </section>
+    <!-- /portfolio -->
+
+    <!-- CTA Section
+   ================================================== -->
+
+    <!-- /cta -->
+
+    <!-- services Section
+   ================================================== -->
+    <section id="services">
+      <div class="overlay"></div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Servisler</h5>
+          <h1>Sizin için ne yapabilirim</h1>
+
+          <p class="lead">
+			web siteniz kurabilirim , sosyal medya yönetimiz ile ilgilenebilirim , web sitenizi güncelleyebilirim , web sitenizi optimize edebilirim , web sitenizi hızlandırabilirim , web sitenizi güvenli hale getirebilirim , web sitenizi yedekleyebilirim , web sitenizi arama motorlarında üst sıralara çıkarabilirim , web sitenizi reklam verebilirim , web sitenizi analiz edebilirim 
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row services-content">
+        <div id="owl-slider" class="owl-carousel services-list">
+          <div class="service">
+            <span class="icon"><i class="icon-earth"></i></span>
+
+            <div class="service-content">
+              <h3>Webdesign</h3>
+
+              <p class="desc">
+              web sitenizi baştan dezayn eder ve güncel tutarım.böylelikle web siteniz daha güzel ve kullanışlı olur.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-window"></i></span>
+
+            <div class="service-content">
+              <h3>Web geliştirme</h3>
+
+              <p class="desc">
+			web sitenizi baştan yazabilirim ve güncel tutarım.böylelikle web siteniz daha güzel ve kullanışlı olur.
+			aklınızdaki projeyi hayata geçirebilirim.7-24 destek verebilirim.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-paint-brush"></i></span>
+
+            <div class="service-content">
+              <h3>Markalaşma</h3>
+
+              <p class="desc">
+				Markalaşma sürecinde  markalaştırma alanında tutkulu ve yaratıcı bir uzman. Benzersiz kimlikler oluşturarak markaları öne çıkarmayı hedeflerim. 💼🚀
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-toggles"></i></span>
+
+            <div class="service-content">
+              <h3>UI/UX Design</h3>
+
+              <p class="desc">
+                tutkulu ve yenilikçi bir Junior UI/UX Designer. Kullanıcı deneyimini öne çıkaran etkileyici tasarımlar oluşturuyorum. 🎨💡
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-image"></i></span>
+
+            <div class="service-content">
+              <h3>Graphics Design</h3>
+
+              <p class="desc">
+				tutkulu ve yenilikçi bir Junior UI/UX Designer. Kullanıcı deneyimini öne çıkaran etkileyici tasarımlar oluşturuyorum. 🎨💡
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-chat"></i></span>
+
+            <div class="service-content">
+              <h3>
+				Danışmanlık</h3>
+
+              <p class="desc">
+				vizyon sahibi ve uzman bir Web Danışmanıyım. İnternet dünyasında markaların dijital varlığını güçlendirmeye yardımcı oluyorum. Stratejik planlama ve analiz yeteneğimle, müşterilerimin ihtiyaçlarına uygun web çözümleri sunuyorum. Kullanıcı odaklı tasarım ve gelişmiş teknolojilerle müşterilerime rekabet avantajı sağlamayı hedefliyorum. Dijital dönüşüm yolculuğunda sizinle birlikte çalışmak için sabırsızlanıyorum. 🌐🚀
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+        </div>
+        <!-- /services-list -->
+      </div>
+      <!-- /services-content -->
+    </section>
+    <!-- /services -->
+
+    <!-- stats Section
+   ================================================== -->
+    <section id="stats" class="count-up">
+      <div class="row">
+        <div class="col-twelve">
+          <div
+            class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list"
+          >
+            <div class="bgrid stat">
+              <div class="icon-part">
+                <i class="icon-pencil-ruler"></i>
+              </div>
+
+              <h3 class="stat-count">30</h3>
+
+              <h5 class="stat-title">Proje Tamamlandı</h5>
+            </div>
+            <!-- /stat -->
+
+            <div class="bgrid stat">
+              <div class="icon-part">
+                <i class="icon-users"></i>
+              </div>
+
+              <h3 class="stat-count">10</h3>
+
+              <h5 class="stat-title">Mutlu müşteri</h5>
+            </div>
+            <!-- /stat -->
+
+            <div class="bgrid stat">
+              <div class="icon-part">
+                <i class="icon-badge"></i>
+              </div>
+
+              <h3 class="stat-count">200</h3>
+
+              <h5 class="stat-title">Ödül</h5>
+            </div>
+            <!-- /stat -->
+
+            <div class="bgrid stat">
+              <div class="icon-part">
+                <i class="icon-light-bulb"></i>
+              </div>
+
+              <h3 class="stat-count">120</h3>
+
+              <h5 class="stat-title">Çılgın Fikirler</h5>
+            </div>
+            <!-- /stat -->
+
+            <div class="bgrid stat">
+              <div class="icon-part">
+                <i class="icon-cup"></i>
+              </div>
+
+              <h3 class="stat-count">20 </h3>
+
+              <h5 class="stat-title">Coffee Cups</h5>
+            </div>
+            <!-- /stat -->
+
+            <div class="bgrid stat">
+              <div class="icon-part">
+                <i class="icon-clock"></i>
+              </div>
+
+              <h3 class="stat-count">7200</h3>
+
+              <h5 class="stat-title">Saat </h5>
+            </div>
+            <!-- /stat -->
+          </div>
+          <!-- /stats-list -->
+        </div>
+        <!-- /twelve -->
+      </div>
+      <!-- /row -->
+    </section>
+    <!-- /stats -->
+
+    <!-- contact
+   ================================================== -->
+    <section id="contact">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>İletişim</h5>
+          <h1>Geri Bilidrim ve Bilgilendirme Formu</h1>
+
+          <p class="lead">
+			İşbirliği yapmak için benimle iletişime geçebilirsiniz. Ayrıca, web
+			siteniz için bir teklif almak istiyorsanız, lütfen aşağıdaki
+			formu doldurun. En kısa sürede size geri döneceğim.
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row contact-form">
+        <div class="col-twelve">
+          <!-- form -->
+          <form name="contactForm" id="contactForm" method="post" action="">
+            <fieldset>
+              <div class="form-field">
+                <input
+                  name="contactName"
+                  type="text"
+                  id="contactName"
+                  placeholder="İsim"
+                  value=""
+                  minlength="2"
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactEmail"
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Email"
+                  value=""
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactSubject"
+                  type="text"
+                  id="contactSubject"
+                  placeholder="Konu"
+                  value=""
+                />
+              </div>
+              <div class="form-field">
+                <textarea
+                  name="contactMessage"
+                  id="contactMessage"
+                  placeholder="mesaj"
+                  rows="10"
+                  cols="50"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <button class="submitform">Gönder</button>
+                <div id="submit-loader">
+                  <div class="text-loader">Sending...</div>
+                  <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <!-- Form End -->
+
+          <!-- contact-warning -->
+          <div id="message-warning"></div>
+          <!-- contact-success -->
+          <div id="message-success">
+            <i class="fa fa-check"></i>Mesajınız için Teşekür ederim<br />
+          </div>
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /contact-form -->
+
+      <div class="row contact-info">
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="icon-pin"></i>
+          </div>
+
+          <h5>Lokasyon</h5>
+
+          <p>
+            özkarakaya cad. ikinci inönü mah.<br />
+            c-7 blok narbel <br />
+            narlıdere/izmir
+          </p>
+        </div>
+
+        <div class="col-four tab-full collapse">
+          <div class="icon">
+            <i class="icon-mail"></i>
+          </div>
+
+          <h5>Email Adresim</h5>
+
+          <p>
+            Yetkinkrsngr@gmail.com<br />
+
+          </p>
+        </div>
+
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="icon-phone"></i>
+          </div>
+
+          <h5>Telefon </h5>
+
+          <p>
+            Cep: (+90) 504 295 09 49<br />
+          </p>
+        </div>
+      </div>
+      <!-- /contact-info -->
+    </section>
+    <!-- /contact -->
+
+    <!-- footer
+   ================================================== -->
+
+    <footer>
+      <div class="row">
+        <div class="col-six tab-full pull-right social">
+          <ul class="footer-social">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-eight tab-full">
+          <div class="copyright">
+            <span>© Copyright 2018 </span>
+            <span
+              >Design by
+              <a href="http://www.styleshout.com/">styleshout</a></span
+            >
+            <span
+              >Distributed by
+              <a href="https://themewagon.com/">themewagon</a></span
+            >
+          </div>
+        </div>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"
+            ><i class="fa fa-long-arrow-up"></i
+          ></a>
+        </div>
+      </div>
+      <!-- /row -->
+    </footer>
+
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
