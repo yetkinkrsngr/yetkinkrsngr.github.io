@@ -1214,15 +1214,18 @@ header .logo a {
   margin: 0;
   padding: 0;
   border: none;
-  font: 0/0 a;
   text-shadow: none;
-  color: transparent;
   width: 92px;
   height: 35px;
-  background: url("../images/logo.png") no-repeat center;
   background-size: 200%;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 1.5rem;
 }
-
+header .logo i {
+  display: inline-block;
+  margin-right: 15px;
+}
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
