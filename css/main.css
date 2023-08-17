@@ -2659,7 +2659,7 @@ footer .copyright span:last-child::after {
  * footer
  * -------------------------------------------------------------------
  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 501px) {
   footer {
     text-align: center;
   }
@@ -2717,4 +2717,9 @@ footer .copyright span:last-child::after {
 /*# sourceMappingURL=main.css.map */
 .colorLogo {
   color: #ff0077;
+}
+@media (max-width: 500px) {
+  body {
+    display: none;
+  }
 }
