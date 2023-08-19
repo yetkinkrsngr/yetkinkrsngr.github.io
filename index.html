@@ -1,1029 +1,570 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="tr">
-  <!--<![endif]-->
+<html lang="en">
   <head>
-    <!--- basic page needs
-   ================================================== -->
     <meta charset="utf-8" />
-    <title>yetkin karasungur Portfolio page</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <!-- mobile specific metas
-   ================================================== -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- CSS
-   ================================================== -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/vendor.css" />
-
-    <!-- script
-   ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-	================================================== -->
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <script src="https://kit.fontawesome.com/7852e4b612.js" crossorigin="anonymous"></script>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Yetkin Karasungur Portfolio page</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- some animation and hover css -->
+    <link rel="stylesheet" href="css/animatin.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7852e4b612.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
-  <body id="top">
-    <!-- header 
-   ================================================== -->
-    <header>
-      <div class="row">
-        <div class="top-bar">
-          <a class="menu-toggle" href="#"><span>Menu</span></a>
-
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
           <div class="logo">
-            <a href="index.html"><i class="fa-solid fa-code fa-beat fa-lg" style="color: #CC0459;"></i>Yetkin</a>
+            <a href="index.html"
+              ><i
+                class="fa-solid fa-code fa-beat fa-lg"
+                style="color: #cc0459"
+              ></i
+              ><span
+                class="d-inline-block ml-5 fw-bolder fs-6"
+                style="color: black; margin-left: 15px"
+                >YetkinDev</span
+              >
+            </a>
           </div>
-
-          <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-              <li class="current">
-                <a class="smoothscroll" href="#intro" title="">Anasayfa</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Anasayfa</a>
               </li>
-              <li>
-                <a class="smoothscroll" href="#about" title="">Hakkımda</a>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Özgeçmiş</a>
               </li>
-              <li>
-                <a class="smoothscroll" href="#resume" title="">Özgeçmiş</a>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projeler</a>
               </li>
-              <li>
-                <a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
-              </li>
-              <li>
-                <a class="smoothscroll" href="#services" title="">Hizmetler</a>
-              </li>
-              <li>
-                <a class="smoothscroll" href="#contact" title="">İletşim</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">İletişim</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <!-- /top-bar -->
-      </div>
-      <!-- /row -->
-    </header>
-    <!-- /header -->
-
-    <!-- intro section
-   ================================================== -->
-    <section id="intro">
-      <div class="intro-overlay"></div>
-
-      <div class="intro-content">
-        <div class="row">
-          <div class="col-twelve">
-            <h5>Merhaba, Dünya.</h5>
-            <h1>Ben Yetkin Karasungur.</h1>
-
-            <p class="intro-position">
-              <span>Front-end Developer</span>
-              <span>UI/UX Designer</span>
-            </p>
-
-            <a class="button stroke smoothscroll" href="#about" title=""
-              >Hakkımda daha Bilgi</a
-            >
           </div>
         </div>
-      </div>
-      <!-- /intro-content -->
-
-      <ul class="intro-social">
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100088846407129"
-            ><i class="fa fa-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/yetkinynlmz"
-            ><i class="fa fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/yetkinkrsngr"
-            ><i class="fa fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/yetkin-karasungur/"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-        </li>
-      </ul>
-      <!-- /intro-social -->
-    </section>
-    <!-- /intro -->
-
-    <!-- about section
-   ================================================== -->
-    <section id="about">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Hakkımda</h5>
-          <h1>Kendimi size tanıtmaktan şeref duyarım</h1>
-
-          <div class="intro-info">
-            <img src="images/IMG_0807.jpeg" alt="Profile Picture" />
-
-            <p class="lead">
-              İletişim becerileri yüksek, dijital sistemler ve teknolojiler
-              konusunda deneyimli, sonuç odaklı bir teknoloji uzmanıyım
-              Öğrenmeye ve kendimi geliştirmeye açık bir yapıya sahibim. Sahip
-              olduğum görev ve sorumlulukları her zaman yerine getiririm.
-              Çalışma saatleri konusunda endişelenmeyin ve ihtiyaç halinde her
-              zaman hazır bulundurur. Teknolojik bilgi birikimim ile her türlü
-              yardıma hazırım. Organizasyon / Yönetim Becerileri Grup
-              çalışmasına ve yöneticilik becerilerine yatkın ve yetenekliyim. iş
-              ve zaman planlamasında pratik düşünme ve hızlı hareket etme
-              yeteneği, grup çalışması ve organizasyon yönetimi. Bunu hem yurt
-              içinde hem de yurt içinde dahil olduğum organizasyonlarda
-              yeteneğimin bir kanıtı olarak görüyorum. yurt dışı. Tamamladığım
-              eğitim sayesinde farklı dünya geçmişlerine sahip insanlara uyum
-              sağlayabileceğim. yurt dışı,
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /section-intro -->
-
-      <div class="row about-content">
-        <div class="col-six tab-full">
-          <h3>Profil</h3>
-          <p>
-            Merhaba! Ben bir Junior Frontend Developer'ım, web geliştirmeye
-            meraklıyım ve kullanıcı dostu arayüzler oluşturmayı seviyorum. HTML,
-            CSS, JavaScript ve React gibi teknolojilere odaklanıyorum ve sürekli
-            gelişmeye açığım. Takım çalışmasına önem veren sorumluluk sahibi
-            biriyim. Hedefim, web dünyasındaki fırsatlardan yararlanmak ve
-            başarılı projelerde yer almak.
-          </p>
-
-          <ul class="info-list">
-            <li>
-              <strong>Ad Soyad:</strong>
-              <span>Yetkin Karasungr</span>
-            </li>
-            <li>
-              <strong>Doğum Yılı:</strong>
-              <span>29/04/1992</span>
-            </li>
-            <li>
-              <strong>Meslek:</strong>
-              <span>Freelancer, Frontend Developer</span>
-            </li>
-            <li>
-              <strong>Email:</strong>
-              <span>yetkinkrsngr@gmail.com</span>
-            </li>
-          </ul>
-          <!-- /info-list -->
-        </div>
-
-        <div class="col-six tab-full">
-          <h3>Yetenekler</h3>
-          <p>
-			<ul>
-				<li>HTML, CSS ve JavaScript konusunda yetenekliyim.</li>
-				<li>React gibi Frontend framework'unu kullanabiliyorum.</li>
-				<li>Kullanıcı dostu arayüzler oluşturma becerisine sahibim.</li>
-				<li>Mobil uyumlu ve hızlı web siteleri tasarlayabiliyorum.</li>
-				<li>Git gibi sürüm kontrol sistemlerini kullanıyorum.</li>
-				<li>Problem çözme ve iletişim becerilerim güçlüdür.</li>
-			</ul>			
-          </p>
-
-          <ul class="skill-bars">
-            <li>
-              <div class="progress percent90"><span>90%</span></div>
-              <strong>HTML5</strong>
-            </li>
-            <li>
-              <div class="progress percent85"><span>85%</span></div>
-              <strong>CSS3</strong>
-            </li>
-            <li>
-              <div class="progress percent70"><span>70%</span></div>
-              <strong>JQuery</strong>
-            </li>
-            <li>
-              <div class="progress percent70"><span>70%</span></div>
-              <strong>Python</strong>
-            </li>
-            <li>
-              <div class="progress percent75"><span>75%</span></div>
-              <strong>Wordpress</strong>
-            </li>
-          </ul>
-          <!-- /skill-bars -->
-        </div>
-      </div>
-
-      <div class="row button-section">
-        <div class="col-twelve">
-          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
-            >Beni işe al</a
-          >
-          <a href="engresume.rar" title="Download CV" class="button button-primary" download
-            >Özgeçmiş İndir</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- /process-->
-
-    <!-- resume Section
-   ================================================== -->
-    <section id="resume" class="grey-section">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Öz geçmiş</h5>
-          <h1>Hakkımda daha fazlası.</h1>
-
-          <p class="lead">
-			"Kod, hayal gücünü gerçeğe dönüştürmenin sihirli anahtarıdır."
-          </p>
-        </div>
-      </div>
-      <!-- /section-intro-->
-
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>İş deneyimi</h2>
-        </div>
-        <!-- /resume-header -->
-
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Sosyal medya yönetiisi</h3>
-                <p>July 2020- devam ediyor</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Telus İnternational</h4>
-                <p>
-					sosyal medya yönetimi, içerik üretimi, tasarım, reklam yönetimi, raporlama hakkınnda bilgi sahibi olduğum bir firma ,
-					 platformlarda yayınlanacak içerikleri uygunluk, kalite ve güvenlik açısından denetleyen kişiydim. Hedef, kullanıcı deneyimini geliştirmek ve uygun olmayan içerikleri engelledim.
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block -->
-
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Ön Uç geliştirici</h3>
-                <p>2014 - 2015</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Patika Dev</h4>
-                <p>
-					Patika Dev, çevrimiçi eğitimler sunan ve pratik becerileri geliştirmeye odaklanan bir platformdur. Teknoloji ve programlama konularında geniş bir müfredat ve topluluk desteği sunar. bu platforma öğrenci olarak başladığım yolculuk mentörlük kapsamında girdi ve halen devam etmekteyim.
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block -->
-
-            <div class="timeline-block">
-
-
-
-            </div>
-            <!-- /timeline-block -->
-          </div>
-          <!-- /timeline-wrap -->
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /resume-timeline -->
-
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>Eğitim</h2>
-        </div>
-        <!-- /resume-header -->
-
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-
-
-
-            </div>
-            <!-- /timeline-block -->
-
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Bachelor Degree</h3>
-                <p> 2010 -  2016</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>kharkiv Radio Electronik Üniversitesi</h4>
-                <p>
-					bilgisayar mühendisliği bölümü mezunu oluğum üniversite hem bilgisayar bilimler hakkında hemde rusça ve ingilizce dil bilgisi hakkında bilgi sahibi olduğum bir üniversitedir.
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block -->
-
-            <div class="timeline-block">
-
-
-            </div>
-            <!-- /timeline-block -->
-          </div>
-          <!-- /timeline-wrap -->
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /resume-timeline -->
-    </section>
-    <!-- /features -->
-
-    <!-- Portfolio Section
-   ================================================== -->
-    <section id="portfolio">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>portfoylo</h5>
-          <h1>Bazı yaptığım işler</h1>
-
-          <p class="lead">
-			Merhaba, ben Junior Web Developer Yetkin. Web geliştirmeye olan merakım ve tutkumla, kullanıcılar için etkileyici ve işlevsel web deneyimleri oluşturmaya adanmış biriyim.
-			<br>
-			Yeteneklerim:
-			<br>
-			HTML, CSS ve JavaScript ile temel web sayfaları oluşturabiliyorum.
-			React ve Bootstrap gibi Frontend framework'leriyle çalışabiliyorum.
-			Responsive (duyarlı) tasarım prensiplerini kullanarak mobil uyumlu web siteleri tasarlayabiliyorum.
-			Git ve GitHub ile sürüm kontrolünü ve işbirliğini sağlayabiliyorum.
-			Projelerim:
-			<br>
-			HTML, CSS ve JavaScript kullanarak, basit ve şık bir kişisel blog sayfası tasarladım.
-			Sayfanın tasarımında Bootstrap'ten faydalandım ve blog yazılarını Firebase üzerinde yönetmeyi sağladım.
-			Hava Durumu Uygulaması:
-			<br>
-			Hava durumu API'sini kullanarak, kullanıcının konumuna göre hava durumunu gösteren bir web uygulaması geliştirdim.
-			CSS ile kullanıcı dostu arayüz tasarladım ve JavaScript ile verileri güncelleyerek canlı bir deneyim sağladım.
-			Öğrenmeye ve kendimi geliştirmeye açık bir yapıya sahibim. Takım çalışmasına uyumlu, hatalardan öğrenen ve sorumluluk sahibi bir geliştirici olarak sürekli büyümek ve yeni projelerde yer almak için heyecanlıyım.
-			
-			
-        </div>
-      </div>
-      <!-- /section-intro-->
-
-      <div class="row portfolio-content">
-        <div class="col-twelve">
-          <!-- portfolio-wrapper -->
-          <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img src="images/portfolio/liberty.jpg" alt="Liberty" />
-                <a href="#modal-01" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Liberty</h3>
-                      <span class="folio-types"> Graphic Design </span>
-                    </div>
+      </nav>
+      <!-- Header-->
+      <header class="py-5">
+        <div class="container px-5 pb-5">
+          <div class="row gx-5 align-items-center">
+            <div class="col-xxl-5">
+              <!-- Header text content-->
+              <div class="text-center text-xxl-start">
+                <div
+                  class="badge bg-gradient-primary-to-secondary text-white mb-4"
+                >
+                  <div class="text-uppercase">
+                    Dizayn &middot; Geliştirme &middot; Pazarlama
                   </div>
-                </a>
+                </div>
+                <div class="fs-3 fw-light text-muted">
+                  İşinizi
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white p5 spn-bg"
+                    >Geliştirmede</span
+                  >
+                  Yardımcı Olabilirim
+                </div>
+                <h1 class="display-3 fw-bolder mb-5">
+                  <span class="text-gradient d-inline">
+                    Çevrimiçi olun <br />hızla-büyüyün;</span
+                  >
+                </h1>
+
+                <div class="d-flex justify-content-around mb-2">
+                  <p class="anima-hover">#FrontendDeveloper</p>
+                  <p class="anima-hover">#WebDevelopment</p>
+                  <p class="anima-hover">#UserExperience</p>
+                </div>
+                <div
+                  class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3"
+                >
+                  <a
+                    class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                    href="resume.html"
+                    >Özgeçmiş</a
+                  >
+                  <a
+                    class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                    href="projects.html"
+                    >Projeler</a
+                  >
+                </div>
               </div>
             </div>
-            <!-- /folio-item -->
-
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug" />
-                <a href="#modal-02" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Shutterbug</h3>
-                      <span class="folio-types"> Web Design </span>
-                    </div>
+            <div class="col-xxl-7">
+              <!-- Header profile picture-->
+              <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                <div class="profile bg-gradient-primary-to-secondary">
+                  <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
+                  <!-- Watch a tutorial on how to do this on YouTube (link)-->
+                  <a
+                    class="img-img"
+                    href="https://www.linkedin.com/in/yetkin-karasungur/"
+                  >
+                    <img class="profile-img" src="assets/profile.png" alt="..."
+                  /></a>
+                  <div class="dots-1">
+                    <!-- SVG Dots-->
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 191.6 1215.4"
+                      style="enable-background: new 0 0 191.6 1215.4"
+                      xml:space="preserve"
+                    >
+                      <g
+                        transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                      >
+                        <path
+                          d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <!-- END of SVG dots-->
                   </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item -->
-
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img src="images/portfolio/clouds.jpg" alt="Clouds" />
-                <a href="#modal-03" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Clouds</h3>
-                      <span class="folio-types"> Web Design </span>
-                    </div>
+                  <div class="dots-2">
+                    <!-- SVG Dots-->
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 191.6 1215.4"
+                      style="enable-background: new 0 0 191.6 1215.4"
+                      xml:space="preserve"
+                    >
+                      <g
+                        transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                      >
+                        <path
+                          d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <!-- END of SVG dots-->
                   </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item -->
-
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img src="images/portfolio/beetle.jpg" alt="Beetle" />
-                <a href="#modal-04" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Beetle</h3>
-                      <span class="folio-types"> Branding </span>
-                    </div>
+                  <div class="dots-3">
+                    <!-- SVG Dots-->
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 191.6 1215.4"
+                      style="enable-background: new 0 0 191.6 1215.4"
+                      xml:space="preserve"
+                    >
+                      <g
+                        transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                      >
+                        <path
+                          d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <!-- END of SVG dots-->
                   </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item -->
-
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse" />
-                <a href="#modal-05" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Lighthouse</h3>
-                      <span class="folio-types"> Web Development </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item -->
-
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img src="images/portfolio/salad.jpg" alt="Salad" />
-                <a href="#modal-06" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Salad</h3>
-                      <span class="folio-types"> Branding </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item -->
-
-            <!-- modal popups - begin
-	            ============================================================= -->
-            <div id="modal-01" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
-              </div>
-
-              <div class="description-box">
-                <h4>Liberty</h4>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
-                </p>
-
-                <div class="categories">Web Development</div>
-              </div>
-
-              <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
-            </div>
-            <!-- /modal-01 -->
-
-            <div id="modal-02" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
-              </div>
-
-              <div class="description-box">
-                <h4>Shutterbug</h4>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
-                </p>
-
-                <div class="categories">Web Design</div>
-              </div>
-
-              <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
-            </div>
-            <!-- /modal-02 -->
-
-            <div id="modal-03" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
-              </div>
-
-              <div class="description-box">
-                <h4>Clouds</h4>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
-                </p>
-
-                <div class="categories">Web Design</div>
-              </div>
-
-              <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
-            </div>
-            <!-- /modal-03 -->
-
-            <div id="modal-04" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-              </div>
-
-              <div class="description-box">
-                <h4>Beetle</h4>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
-                </p>
-
-                <div class="categories">Branding</div>
-              </div>
-
-              <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
-            </div>
-            <!-- /modal-04 -->
-
-            <div id="modal-05" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-              </div>
-
-              <div class="description-box">
-                <h4>Lighthouse</h4>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
-                </p>
-
-                <div class="categories">Web Development</div>
-              </div>
-
-              <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
-            </div>
-            <!-- /modal-05 -->
-
-            <div id="modal-06" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img src="images/portfolio/modals/m-salad.jpg" alt="" />
-              </div>
-
-              <div class="description-box">
-                <h4>Salad</h4>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
-                </p>
-
-                <div class="categories">Branding</div>
-              </div>
-
-              <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
-            </div>
-            <!-- /modal-06 -->
-
-            <!-- modal popups - end
-	            ============================================================= -->
-          </div>
-          <!-- /portfolio-wrapper -->
-        </div>
-        <!-- /twelve -->
-      </div>
-      <!-- /portfolio-content -->
-    </section>
-    <!-- /portfolio -->
-
-    <!-- CTA Section
-   ================================================== -->
-
-    <!-- /cta -->
-
-    <!-- services Section
-   ================================================== -->
-    <section id="services">
-      <div class="overlay"></div>
-
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Servisler</h5>
-          <h1>Sizin için ne yapabilirim</h1>
-
-          <p class="lead">
-			web siteniz kurabilirim , sosyal medya yönetimiz ile ilgilenebilirim , web sitenizi güncelleyebilirim , web sitenizi optimize edebilirim , web sitenizi hızlandırabilirim , web sitenizi güvenli hale getirebilirim , web sitenizi yedekleyebilirim , web sitenizi arama motorlarında üst sıralara çıkarabilirim , web sitenizi reklam verebilirim , web sitenizi analiz edebilirim 
-          </p>
-        </div>
-      </div>
-      <!-- /section-intro -->
-
-      <div class="row services-content">
-        <div id="owl-slider" class="owl-carousel services-list">
-          <div class="service">
-            <span class="icon"><i class="icon-earth"></i></span>
-
-            <div class="service-content">
-              <h3>Webdesign</h3>
-
-              <p class="desc">
-              web sitenizi baştan dezayn eder ve güncel tutarım.böylelikle web siteniz daha güzel ve kullanışlı olur.
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="service">
-            <span class="icon"><i class="icon-window"></i></span>
-
-            <div class="service-content">
-              <h3>Web geliştirme</h3>
-
-              <p class="desc">
-			web sitenizi baştan yazabilirim ve güncel tutarım.böylelikle web siteniz daha güzel ve kullanışlı olur.
-			aklınızdaki projeyi hayata geçirebilirim.7-24 destek verebilirim.
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="service">
-            <span class="icon"><i class="icon-paint-brush"></i></span>
-
-            <div class="service-content">
-              <h3>Markalaşma</h3>
-
-              <p class="desc">
-				Markalaşma sürecinde  markalaştırma alanında tutkulu ve yaratıcı bir uzman. Benzersiz kimlikler oluşturarak markaları öne çıkarmayı hedeflerim. 💼🚀
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="service">
-            <span class="icon"><i class="icon-toggles"></i></span>
-
-            <div class="service-content">
-              <h3>UI/UX Design</h3>
-
-              <p class="desc">
-                tutkulu ve yenilikçi bir Junior UI/UX Designer. Kullanıcı deneyimini öne çıkaran etkileyici tasarımlar oluşturuyorum. 🎨💡
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="service">
-            <span class="icon"><i class="icon-image"></i></span>
-
-            <div class="service-content">
-              <h3>Graphics Design</h3>
-
-              <p class="desc">
-				tutkulu ve yenilikçi bir Junior UI/UX Designer. Kullanıcı deneyimini öne çıkaran etkileyici tasarımlar oluşturuyorum. 🎨💡
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="service">
-            <span class="icon"><i class="icon-chat"></i></span>
-
-            <div class="service-content">
-              <h3>
-				Danışmanlık</h3>
-
-              <p class="desc">
-				vizyon sahibi ve uzman bir Web Danışmanıyım. İnternet dünyasında markaların dijital varlığını güçlendirmeye yardımcı oluyorum. Stratejik planlama ve analiz yeteneğimle, müşterilerimin ihtiyaçlarına uygun web çözümleri sunuyorum. Kullanıcı odaklı tasarım ve gelişmiş teknolojilerle müşterilerime rekabet avantajı sağlamayı hedefliyorum. Dijital dönüşüm yolculuğunda sizinle birlikte çalışmak için sabırsızlanıyorum. 🌐🚀
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-        </div>
-        <!-- /services-list -->
-      </div>
-      <!-- /services-content -->
-    </section>
-    <!-- /services -->
-
-    <!-- stats Section
-   ================================================== -->
-    <section id="stats" class="count-up">
-      <div class="row">
-        <div class="col-twelve">
-          <div
-            class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list"
-          >
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <i class="icon-pencil-ruler"></i>
-              </div>
-
-              <h3 class="stat-count">30</h3>
-
-              <h5 class="stat-title">Proje Tamamlandı</h5>
-            </div>
-            <!-- /stat -->
-
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <i class="icon-users"></i>
-              </div>
-
-              <h3 class="stat-count">10</h3>
-
-              <h5 class="stat-title">Mutlu müşteri</h5>
-            </div>
-            <!-- /stat -->
-
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <i class="icon-badge"></i>
-              </div>
-
-              <h3 class="stat-count">200</h3>
-
-              <h5 class="stat-title">Ödül</h5>
-            </div>
-            <!-- /stat -->
-
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <i class="icon-light-bulb"></i>
-              </div>
-
-              <h3 class="stat-count">120</h3>
-
-              <h5 class="stat-title">Çılgın Fikirler</h5>
-            </div>
-            <!-- /stat -->
-
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <i class="icon-cup"></i>
-              </div>
-
-              <h3 class="stat-count">20 </h3>
-
-              <h5 class="stat-title">Coffee Cups</h5>
-            </div>
-            <!-- /stat -->
-
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <i class="icon-clock"></i>
-              </div>
-
-              <h3 class="stat-count">7200</h3>
-
-              <h5 class="stat-title">Saat </h5>
-            </div>
-            <!-- /stat -->
-          </div>
-          <!-- /stats-list -->
-        </div>
-        <!-- /twelve -->
-      </div>
-      <!-- /row -->
-    </section>
-    <!-- /stats -->
-
-    <!-- contact
-   ================================================== -->
-    <section id="contact">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>İletişim</h5>
-          <h1>Geri Bilidrim ve Bilgilendirme Formu</h1>
-
-          <p class="lead">
-			İşbirliği yapmak için benimle iletişime geçebilirsiniz. Ayrıca, web
-			siteniz için bir teklif almak istiyorsanız, lütfen aşağıdaki
-			formu doldurun. En kısa sürede size geri döneceğim.
-          </p>
-        </div>
-      </div>
-      <!-- /section-intro -->
-
-      <div class="row contact-form">
-        <div class="col-twelve">
-          <!-- form -->
-          <form name="contactForm" id="contactForm" method="post" action="">
-            <fieldset>
-              <div class="form-field">
-                <input
-                  name="contactName"
-                  type="text"
-                  id="contactName"
-                  placeholder="İsim"
-                  value=""
-                  minlength="2"
-                  required=""
-                />
-              </div>
-              <div class="form-field">
-                <input
-                  name="contactEmail"
-                  type="email"
-                  id="contactEmail"
-                  placeholder="Email"
-                  value=""
-                  required=""
-                />
-              </div>
-              <div class="form-field">
-                <input
-                  name="contactSubject"
-                  type="text"
-                  id="contactSubject"
-                  placeholder="Konu"
-                  value=""
-                />
-              </div>
-              <div class="form-field">
-                <textarea
-                  name="contactMessage"
-                  id="contactMessage"
-                  placeholder="mesaj"
-                  rows="10"
-                  cols="50"
-                  required=""
-                ></textarea>
-              </div>
-              <div class="form-field">
-                <button class="submitform">Gönder</button>
-                <div id="submit-loader">
-                  <div class="text-loader">Sending...</div>
-                  <div class="s-loader">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
+                  <div class="dots-4">
+                    <!-- SVG Dots-->
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 191.6 1215.4"
+                      style="enable-background: new 0 0 191.6 1215.4"
+                      xml:space="preserve"
+                    >
+                      <g
+                        transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                      >
+                        <path
+                          d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"
+                        ></path>
+                        <path
+                          d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"
+                        ></path>
+                        <path
+                          d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"
+                        ></path>
+                        <path
+                          d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"
+                        ></path>
+                        <path
+                          d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"
+                        ></path>
+                        <path
+                          d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"
+                        ></path>
+                        <path
+                          d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"
+                        ></path>
+                        <path
+                          d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"
+                        ></path>
+                        <path
+                          d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"
+                        ></path>
+                        <path
+                          d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"
+                        ></path>
+                        <path
+                          d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <!-- END of SVG dots-->
                   </div>
                 </div>
               </div>
-            </fieldset>
-          </form>
-          <!-- Form End -->
-
-          <!-- contact-warning -->
-          <div id="message-warning"></div>
-          <!-- contact-success -->
-          <div id="message-success">
-            <i class="fa fa-check"></i>Mesajınız için Teşekür ederim<br />
+            </div>
           </div>
         </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /contact-form -->
-
-      <div class="row contact-info">
-        <div class="col-four tab-full">
-          <div class="icon">
-            <i class="icon-pin"></i>
-          </div>
-
-          <h5>Lokasyon</h5>
-
-          <p>
-            özkarakaya cad. ikinci inönü mah.<br />
-            c-7 blok narbel <br />
-            narlıdere/izmir
-          </p>
-        </div>
-
-        <div class="col-four tab-full collapse">
-          <div class="icon">
-            <i class="icon-mail"></i>
-          </div>
-
-          <h5>Email Adresim</h5>
-
-          <p>
-            Yetkinkrsngr@gmail.com<br />
-
-          </p>
-        </div>
-
-        <div class="col-four tab-full">
-          <div class="icon">
-            <i class="icon-phone"></i>
-          </div>
-
-          <h5>Telefon </h5>
-
-          <p>
-            Cep: (+90) 504 295 09 49<br />
-          </p>
-        </div>
-      </div>
-      <!-- /contact-info -->
-    </section>
-    <!-- /contact -->
-
-    <!-- footer
-   ================================================== -->
-
-    <footer>
-      <div class="row">
-        <div class="col-six tab-full pull-right social">
-          <ul class="footer-social">
-            <li>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-behance"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-eight tab-full">
-          <div class="copyright">
-            <span>© Copyright 2018 </span>
-            <span
-              >Design by
-              <a href="http://www.styleshout.com/">styleshout</a></span
-            >
-            <span
-              >Distributed by
-              <a href="https://themewagon.com/">themewagon</a></span
-            >
+      </header>
+      <!-- About Section-->
+      <section class="bg-light py-5">
+        <div class="container px-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+              <div class="text-center my-5">
+                <h2 class="display-5 fw-bolder">
+                  <span class="text-gradient d-inline text-uppercase"
+                    >Hakkımda</span
+                  >
+                </h2>
+                <p class="lead fw-light mb-4 fs-2 text-capitalize">
+                  Adım Yetkin ve markaların büyümesine yardımcı oluyorum.
+                </p>
+                <p class="text-muted">
+                  İletişim becerileri yüksek,
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white spn-bg"
+                  >
+                    dijital sistemler</span
+                  >
+                  ve teknolojiler konusunda deneyimli,
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white spn-bg"
+                    >sonuç odaklı</span
+                  >
+                  bir teknoloji uzmanıyım Öğrenmeye ve
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white spn-bg"
+                    >kendimi geliştirmeye</span
+                  >
+                  açık bir yapıya sahibim. Sahip olduğum görev ve sorumlulukları
+                  her zaman yerine getiririm. Çalışma saatleri konusunda
+                  endişelenmeyin ve ihtiyaç halinde her zaman hazır bulunurum.
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white spn-bg"
+                    >Organizasyon / Yönetim</span
+                  >
+                  Becerileri Grup çalışmasına ve yöneticilik becerilerine yatkın
+                  ve yetenekliyim. iş ve zaman planlamasında
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white spn-bg"
+                  >
+                    pratik düşünme</span
+                  >
+                  ve hızlı hareket etme yeteneği,
+                  <span
+                    class="bg-gradient-primary-to-secondary text-white spn-bg"
+                  >
+                    grup çalışması ve organizasyon yönetimi</span
+                  >
+                  . Bunu hem yurt içinde hem de yurt içinde dahil olduğum
+                  organizasyonlarda yeteneğimin bir kanıtı olarak görüyorum.
+                </p>
+                <div class="d-flex justify-content-center fs-2 gap-4">
+                  <a
+                    class="text-gradient spn-bg"
+                    href="https://twitter.com/carl_amca"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                  <a
+                    class="text-gradient spn-bg"
+                    href="https://www.linkedin.com/in/yetkin-karasungur/"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    class="text-gradient spn-bg"
+                    href="https://github.com/yetkinkrsngr"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div id="go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top"
-            ><i class="fa fa-long-arrow-up"></i
-          ></a>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="col-auto">
+            <div class="small m-0">
+              Kopyalama Hakları Kapalıdır. &copy; iletişime geçerseniz
+              gönderirim zaten en azından rızam olur :D
+            </div>
+          </div>
+          <div class="col-auto">
+            <a class="small" href="#!">Gizlilik</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Koşullar</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="https://github.com/yetkinkrsngr">İletişim</a>
+          </div>
         </div>
       </div>
-      <!-- /row -->
     </footer>
-
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
-
-    <!-- Java Script
-   ================================================== -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

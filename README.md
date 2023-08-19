@@ -1,1 +1,0 @@
-# yetkinkrsngr.github.io
